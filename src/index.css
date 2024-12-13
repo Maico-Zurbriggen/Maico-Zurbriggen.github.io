@@ -24,6 +24,12 @@ body {
     margin: 0;
 }
 
+img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+}
+
 .fondo {
     position: absolute;
     width: 100%;

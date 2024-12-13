@@ -1,13 +1,15 @@
-  import { useState } from 'react'
   import './App.css'
-  import { Networks, Principal } from "./components";
+  import { Networks, Sections } from "./components";
 
-  function App() {
+  function App({ children } = props) {
     
     return (
       <>
+        <div>
+          {children}
+          <Sections />
+        </div>
         <Networks />
-        <Principal />
       </>
     )
   }
