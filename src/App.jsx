@@ -1,16 +1,16 @@
-  import './App.css'
   import { Networks, Sections } from "./components";
+  import './App.css'
 
   function App({ children } = props) {
     
     return (
-      <>
-        <div>
+      <div className='page'>
+        <div className='container'>
           {children}
           <Sections />
         </div>
         <Networks />
-      </>
+      </div>
     )
   }
 

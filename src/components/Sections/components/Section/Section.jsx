@@ -1,7 +1,7 @@
 const Section = ({ text } = props) => {
     
     return (
-        <li>{text}</li>
+        <p className="section">{text}</p>
     )
 }
 

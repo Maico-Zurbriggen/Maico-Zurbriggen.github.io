@@ -1,5 +1,5 @@
 :root {
-    --bottom: #92A8D1;
+    --light-blue: #92A8D1;
     --white: #FFFFFF;
     --gray: #D3D3D3;
     --beige: #F5F5DC;
@@ -22,6 +22,14 @@ html {
 body {
     box-sizing: border-box;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-blue);
+}
+
+.index {
+    position: absolute;
+    height: 100%;
 }
 
 img {
@@ -30,16 +38,15 @@ img {
     border-radius: 100%;
 }
 
-.fondo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--bottom);
+h1, h2, p {
+    margin: 0;
 }
-
-.container {
-    display: flex;
+h1 {
+    font-size: 3.2rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+p {
+    font-size: 2rem;
 }

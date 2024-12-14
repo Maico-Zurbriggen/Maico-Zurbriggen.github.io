@@ -1,13 +1,14 @@
 import { Section } from './components';
+import './Sections.css'
 
 const Sections = () => {
 
     return (
-        <ul className="Sections">
+        <div className="sections">
             <Section text="Projects"/>
             <Section text="Education"/>
             <Section text="Courses"/>
-        </ul>
+        </div>
     )
 }
 

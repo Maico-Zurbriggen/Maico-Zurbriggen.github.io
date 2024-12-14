@@ -1,8 +1,8 @@
-const NetworkChild = ({ href, icon } = props) => {
+const NetworkChild = ({ type, href, icon } = props) => {
 
     return (
         <a href={href} target="_blank">
-            <i className={`fab fa-${icon}`}></i>
+            <i className={`${type} fa-${icon} networks-child`}></i>
         </a>
     )
 }

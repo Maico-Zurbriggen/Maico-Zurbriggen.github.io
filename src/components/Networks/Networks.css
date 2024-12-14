@@ -1,0 +1,19 @@
+.networks {
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5rem;
+    align-items: center;
+    height: 3rem;
+    border-top: .1rem solid var(--beige);
+}
+
+.networks-child {
+    color: var(--white);
+    padding: .5rem;
+    font-size: 2.4rem;
+}
+
+.networks-child:hover {
+    background-color: var(--pink);
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.sections {
+    background-color: var(--lavender);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.section {
+    padding: 1rem;
+}
+
+.section:hover {
+    background-color: var(--pink);
+    cursor: pointer;
+}
