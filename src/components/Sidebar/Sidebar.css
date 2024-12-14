@@ -1,0 +1,28 @@
+.sidebar {
+    background-color: var(--lavender);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.section-button {
+    width: 100%;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lavender);
+}
+
+.section-button:hover {
+    background-color: var(--pink);
+    cursor: pointer;
+}
+
+.section-container {
+    display: none;
+    padding: 1rem;
+}
+
+.show {
+    display: block;
+}

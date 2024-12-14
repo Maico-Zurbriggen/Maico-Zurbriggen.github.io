@@ -38,6 +38,13 @@ img {
     border-radius: 100%;
 }
 
+button {
+    border: none;
+    font-size: 2rem;
+    font-family: var(--font);
+    font-weight: bold;
+}
+
 h1, h2, p {
     margin: 0;
 }
