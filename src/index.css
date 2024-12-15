@@ -1,6 +1,7 @@
 :root {
     --light-blue: #92A8D1;
     --white: #FFFFFF;
+    --black: #000000;
     --gray: #D3D3D3;
     --beige: #F5F5DC;
     --pink: #FFB3BA;
@@ -30,6 +31,7 @@ body {
 .index {
     position: absolute;
     height: 100%;
+    width: 100%;
 }
 
 img {
@@ -47,6 +49,7 @@ button {
 
 h1, h2, p {
     margin: 0;
+    cursor: default;
 }
 h1 {
     font-size: 3.2rem;

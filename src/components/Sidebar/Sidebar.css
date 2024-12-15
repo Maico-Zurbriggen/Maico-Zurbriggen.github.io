@@ -1,28 +1,47 @@
 .sidebar {
     background-color: var(--lavender);
     border-radius: .5rem;
+    overflow-y: auto;
     padding: 1rem;
 }
 
-.section-button {
-    width: 100%;
+.sidebar a {
+    text-decoration: none;
+    color: var(--black);
     border-radius: .5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--lavender);
 }
-
-.section-button:hover {
+.sidebar a:hover, .sidebar a p:hover {
     background-color: var(--pink);
     cursor: pointer;
 }
 
-.section-container {
+.underlining {
+    text-decoration: underline;
+}
+
+.content {
     display: none;
     padding: 1rem;
 }
 
+.content p, .content button {
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-bottom: .5rem;
+    text-align: left;
+}
+
 .show {
     display: block;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.sidebar img {
+    width: 4rem;
+    height: 4rem;
 }

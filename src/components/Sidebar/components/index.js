@@ -1,1 +1,7 @@
-export { default as Section } from './Section/Section';
+export { default as Button } from './Button/Button'
+export { default as SidebarAbout } from './SidebarAbout/SidebarAbout'
+export { default as SidebarProject } from './SidebarProject/SidebarProject'
+export { default as SidebarEducation } from './SidebarEducation/SidebarEducation'
+export { default as SidebarCourses } from './SidebarCourses/SidebarCourses'
+export { default as SidebarLanguages } from './SidebarLanguages/SidebarLanguages'
+export { default as ArrowIcon } from './ArrowIcon/ArrowIcon'

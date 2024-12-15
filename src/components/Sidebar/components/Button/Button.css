@@ -1,0 +1,13 @@
+button {
+    width: 100%;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lavender);
+}
+
+button:hover {
+    background-color: var(--pink);
+    cursor: pointer;
+}
