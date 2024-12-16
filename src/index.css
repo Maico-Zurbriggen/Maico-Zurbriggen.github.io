@@ -60,3 +60,14 @@ h2 {
 p {
     font-size: 2rem;
 }
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    border-radius: .5rem;
+    padding: .5rem;
+}
+a:hover {
+    background-color: var(--pink);
+    cursor: pointer;
+}

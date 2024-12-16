@@ -5,13 +5,7 @@
     padding: 1rem;
 }
 
-.sidebar a {
-    text-decoration: none;
-    color: var(--black);
-    border-radius: .5rem;
-}
-.sidebar a:hover, .sidebar a p:hover {
-    background-color: var(--pink);
+.sidebar a p:hover {
     cursor: pointer;
 }
 

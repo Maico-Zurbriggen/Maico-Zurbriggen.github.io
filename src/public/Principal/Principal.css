@@ -1,0 +1,16 @@
+.pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    width: fit-content;
+    text-decoration: underline;
+    margin-right: .5rem;
+}

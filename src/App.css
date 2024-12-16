@@ -12,9 +12,3 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
-.pages {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
