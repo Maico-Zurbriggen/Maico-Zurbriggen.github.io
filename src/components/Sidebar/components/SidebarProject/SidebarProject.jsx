@@ -1,4 +1,4 @@
-const SidebarProject = ({ link, deployed, index, image, text } = props) => {
+const SidebarProject = ({ link, deployed, index, image, text }) => {
     return (
         <a href={link} className={`content ${deployed.includes(index) ? 'projects' : ''}`}>
             <img src={`../src/assets/img/${image}`} alt="Image project" />

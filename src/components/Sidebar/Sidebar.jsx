@@ -33,11 +33,12 @@ const Sidebar = () => {
             <SidebarEducation deployed={deployed} index={2} title="Ingeniería en Sistemas de Información" institution="UTN San Francisco" completion="Cursando tercer año" />
             <SidebarEducation deployed={deployed} index={2} title="Técnico Electrónico" institution="IPET 50 ing. Emilio F. Olmos" completion="2016/2022" />
 
-            <Button text="Courses" method={() => dropDown(3)}>
+            <Button text="Courses and Certificates" method={() => dropDown(3)}>
                 <ArrowIcon deployed={deployed} index={3} />
             </Button>
-            <SidebarCourses link="./courses/htmlycss" deployed={deployed} index={3} title="HTML y CSS desde cero" institution="TodoCode Academy" />
-            <SidebarCourses link="./courses/javascript" deployed={deployed} index={3} title="JavaScript desde cero" institution="TodoCode Academy" />
+            <SidebarCourses link="./src/assets/certificates/javascript_basic_certificate.pdf" deployed={deployed} index={3} title="JavaScript Basic" institution="HackerRank" />
+            <SidebarCourses link="./src/assets/certificates/certificado-html-y-css.html" deployed={deployed} index={3} title="HTML y CSS desde cero" institution="TodoCode Academy" />
+            <SidebarCourses link="./src/assets/certificates/certificado-javascript.html" deployed={deployed} index={3} title="JavaScript desde cero" institution="TodoCode Academy" />
 
             <Button text="Languages" method={() => dropDown(4)}>
                 <ArrowIcon deployed={deployed} index={4} />

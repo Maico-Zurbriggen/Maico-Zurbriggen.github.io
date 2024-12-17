@@ -1,10 +1,12 @@
-const SidebarCourses = ({ deployed, index, link, title, institution } = props) => {
+const SidebarCourses = ({ link, deployed, index, title, institution }) => {
     return (
-        <a href={`./courses/${link}`} className={`content ${deployed.includes(index) ? 'show' : ''}`}>
-            <p>{title}</p>
-            <p>{institution}</p>
-            <p className="underlining">Ver certificado</p>
-        </a>
+        <>
+            <a href={link} className={`content ${deployed.includes(index) ? 'show' : ''}`}>
+                <p>{title}</p>
+                <p>{institution}</p>
+                <p className="underlining">Ver certificado</p>
+            </a>
+        </>
     )
 }
 

@@ -10,7 +10,5 @@
 }
 
 .links a {
-    width: fit-content;
     text-decoration: underline;
-    margin-right: .5rem;
 }

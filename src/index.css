@@ -32,12 +32,14 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 img {
     width: 25rem;
     height: 25rem;
     border-radius: 100%;
+    background-color: var(--lavender);
 }
 
 button {

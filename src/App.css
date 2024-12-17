@@ -1,6 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 2rem;
     height: 100%;
     overflow: hidden;
     padding: 2rem;
