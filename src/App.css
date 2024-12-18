@@ -12,4 +12,43 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: var(--light-blue);
+}
+
+.buttons-functions {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    display: flex;
+}
+
+.button-function {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.button-function img {
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+}
+
+.darkMode {
+    background-color: var(--dark-blue);
+
+    h1, h2, h3, p, a, button {
+        color: var(--white);
+    }
+
+    .sidebar, button {
+        background-color: var(--dark-gray);
+    }
+
+    button:hover, a:hover, i:hover {
+        background-color: var(--sage);
+    }
 }

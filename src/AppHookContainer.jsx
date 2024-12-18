@@ -1,11 +1,14 @@
+import { useTranslation } from 'react-i18next'
 import App from './App'
 import './App.css'
 import AppRouter from './AppRouter'
 
 const AppHookContainer = () => {
+    const { t, i18n } = useTranslation();
+
     return (
-        <App>
-            <AppRouter />
+        <App t={t} i18n={i18n}>
+            <AppRouter t={t} />
         </App>
     )
 }

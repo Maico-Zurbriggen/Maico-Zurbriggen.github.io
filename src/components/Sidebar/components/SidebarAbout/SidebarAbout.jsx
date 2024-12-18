@@ -1,8 +1,8 @@
-const SidebarAbout = ({ link, deployed, index } = props) => {
+const SidebarAbout = ({ link, deployed, index, text, more } = props) => {
     return (
         <a href={link} className={`content ${deployed.includes(index) ? 'show' : ''}`}>
-            <p>Maico Zurbriggen - React developer</p>
-            <p className="underlining">Ver más</p>
+            <p>{text}</p>
+            <p className="underlining">{more}</p>
         </a>
     )
 }

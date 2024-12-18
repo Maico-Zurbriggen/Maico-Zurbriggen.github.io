@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Button, SidebarAbout, SidebarProject, SidebarEducation, SidebarCourses, SidebarLanguages, ArrowIcon } from './components'
 import './Sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = ({ t }) => {
     const [deployed, setDeployed] = useState([]);
 
     const dropDown = (index) => {
@@ -16,35 +16,36 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
 
-            <Button text="About" method={() => dropDown(0)}>
+            <Button text={t('sidebar.about.buttonText')} method={() => dropDown(0)}>
                 <ArrowIcon deployed={deployed} index={0} />
             </Button>
-            <SidebarAbout link="/about" deployed={deployed} index={0}/>
+            <SidebarAbout link="/about" deployed={deployed} index={0} text={t('sidebar.about.text')} more={t('sidebar.about.more')} />
 
-            <Button text="Projects" method={() => dropDown(1)}>
+            <Button text={t('sidebar.projects.buttonText')} method={() => dropDown(1)}>
                 <ArrowIcon deployed={deployed} index={1} />
             </Button>
-            <SidebarProject link="/projects/luigis" deployed={deployed} index={1} image="navbar-brand.svg" text="Luigi's" />
-            <SidebarProject link="/projects/pendingtask" deployed={deployed} index={1} image="pending_task.png" text="Pending Task" />
+            <SidebarProject link="/projects/luigis" deployed={deployed} index={1} image="navbar-brand.svg" text="Luigi's" more={t('sidebar.projects.more')} />
+            <SidebarProject link="/projects/pendingtask" deployed={deployed} index={1} image="pending_task.png" text="Pending Task" more={t('sidebar.projects.more')} />
 
-            <Button text="Education" method={() => dropDown(2)}>
+            <Button text={t('sidebar.education.buttonText')} method={() => dropDown(2)}>
                 <ArrowIcon deployed={deployed} index={2} />
             </Button>
-            <SidebarEducation deployed={deployed} index={2} title="Ingeniería en Sistemas de Información" institution="UTN San Francisco" completion="Cursando tercer año" />
-            <SidebarEducation deployed={deployed} index={2} title="Técnico Electrónico" institution="IPET 50 ing. Emilio F. Olmos" completion="2016/2022" />
+            <SidebarEducation deployed={deployed} index={2} title={t('sidebar.education.engineering.title')} institution="UTN San Francisco" completion={t('sidebar.education.engineering.completion')} />
+            <SidebarEducation deployed={deployed} index={2} title={t('sidebar.education.technician.title')} institution="IPET 50 ing. Emilio F. Olmos" completion="2016/2022" />
 
-            <Button text="Courses and Certificates" method={() => dropDown(3)}>
+            <Button text={t('sidebar.coursesCertifications.buttonText')} method={() => dropDown(3)}>
                 <ArrowIcon deployed={deployed} index={3} />
             </Button>
-            <SidebarCourses link="./src/assets/certificates/javascript_basic_certificate.pdf" deployed={deployed} index={3} title="JavaScript Basic" institution="HackerRank" />
-            <SidebarCourses link="./src/assets/certificates/certificado-html-y-css.html" deployed={deployed} index={3} title="HTML y CSS desde cero" institution="TodoCode Academy" />
-            <SidebarCourses link="./src/assets/certificates/certificado-javascript.html" deployed={deployed} index={3} title="JavaScript desde cero" institution="TodoCode Academy" />
+            <SidebarCourses link="./src/assets/certificates/javascript_basic_certificate.pdf" deployed={deployed} index={3} title={t('sidebar.coursesCertifications.jsBasic.title')} institution="HackerRank" see={t('sidebar.coursesCertifications.more')} />
+            <SidebarCourses link="./src/assets/certificates/javascript_intermediate_certificate.pdf" deployed={deployed} index={3} title={t('sidebar.coursesCertifications.jsIntermediate.title')} institution="HackerRank" see={t('sidebar.coursesCertifications.more')} />
+            <SidebarCourses link="./src/assets/certificates/certificado-html-y-css.html" deployed={deployed} index={3} title={t('sidebar.coursesCertifications.htmlCss.title')} institution="TodoCode Academy" see={t('sidebar.coursesCertifications.more')} />
+            <SidebarCourses link="./src/assets/certificates/certificado-javascript.html" deployed={deployed} index={3} title={t('sidebar.coursesCertifications.js.title')} institution="TodoCode Academy" see={t('sidebar.coursesCertifications.more')} />
 
-            <Button text="Languages" method={() => dropDown(4)}>
+            <Button text={t('sidebar.languages.buttonText')} method={() => dropDown(4)}>
                 <ArrowIcon deployed={deployed} index={4} />
             </Button>
-            <SidebarLanguages deployed={deployed} index={4} language="English" level="Básico" />
-            <SidebarLanguages deployed={deployed} index={4} language="Spanish" level="Native" />
+            <SidebarLanguages deployed={deployed} index={4} language={t('sidebar.languages.english.language')} level={t('sidebar.languages.english.level')} />
+            <SidebarLanguages deployed={deployed} index={4} language={t('sidebar.languages.spanish.language')} level={t('sidebar.languages.spanish.level')} />
 
         </div>
     )

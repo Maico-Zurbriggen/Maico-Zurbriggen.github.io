@@ -1,8 +1,10 @@
 :root {
     --light-blue: #92A8D1;
+    --dark-blue: #2C3E50;
     --white: #FFFFFF;
     --black: #000000;
     --gray: #D3D3D3;
+    --dark-gray: #2E2E2E;
     --beige: #F5F5DC;
     --pink: #FFB3BA;
     --lavender: #E6E6FA;
@@ -25,7 +27,6 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--light-blue);
 }
 
 .index {

@@ -3,46 +3,47 @@ import { Principal } from './public'
 import { AppRoutes } from './models'
 import { RoutesWithNotFound } from './components'
 
-const AppRouter = () => {
+
+const AppRouter = ({ t }) => {
     return (
         <BrowserRouter>
             <RoutesWithNotFound>
                 <Route path='/' element={<Navigate to={AppRoutes.about} />} />
                 <Route path={AppRoutes.about} element={<Principal 
                     image="../src/assets/img/IMG-20240115-WA0004.jpg"
-                    alt="Imagen personal"
-                    title="Yo Soy Maico Zurbriggen"
-                    subtitle="Desarrollador React"
-                    description="Busco adquirir experiencia realizando proyectos e investigando, me encuentro en búsqueda de mi primer oportunidad laboral. En este portfolio podrán ver los distintos proyectos en los que he trabajado y las habilidades que he adquirido"
+                    alt={t('about.alt')}
+                    title={t('about.title')}
+                    subtitle={t('about.subtitle')}
+                    description={t('about.description')}
                     skills="React | JavaScript | HTML | CSS | Node | Express | MongoDB | GIT"
                     link1="https://github.com/Maico-Zurbriggen/Portfolio_react"
-                    textLink1="Repositorio Portfolio"
+                    textLink1={t('about.textLink1')}
                     link2="../src/assets/cv/MaicoZurbriggenCV.pdf"
-                    textLink2="Curriculum"
+                    textLink2={t('about.textLink2')}
                 />} />
                 <Route path={AppRoutes.projects.projectLuigi} element={<Principal 
                     image="../src/assets/img/navbar-brand.svg"
-                    alt="Imagen Luigi's"
-                    title="Luigi's"
-                    subtitle="Frontend para Pizzería"
-                    description="Esta es una página implementada con HTML y CSS la cual solo posee un frontend para una pizzería"
+                    alt={t('luigis.alt')}
+                    title={t('luigis.title')}
+                    subtitle={t('luigis.subtitle')}
+                    description={t('luigis.description')}
                     skills="HTML | JavaScript | CSS | GIT"
                     link1="https://github.com/Maico-Zurbriggen/Luigi-s"
-                    textLink1="Repositorio Luigi's"
+                    textLink1={t('luigis.textLink1')}
                     link2="https://maico-zurbriggen.github.io/Luigi-s/"
-                    textLink2="Implementación GitHub Pages"    
+                    textLink2={t('luigis.textLink2')}    
                 />} />
                 <Route path={AppRoutes.projects.projectPendingTask} element={<Principal 
                     image="../src/assets/img/pending_task.png"
-                    alt="Imagen Pending Task"
-                    title="Pending Task"
-                    subtitle="App para control de tareas diarias"
-                    description="Esta es una página implementada con React y CSS, además se utilizo Zod para validar el formulario de ingreso de notas. Aún no posee una base de datos"
+                    alt={t('pendingTask.alt')}
+                    title={t('pendingTask.title')}
+                    subtitle={t('pendingTask.subtitle')}
+                    description={t('pendingTask.description')}
                     skills="React | JavaScript | CSS | Zod | GIT"
                     link1="https://github.com/Maico-Zurbriggen/pending_task"
-                    textLink1="Repositorio Pending Task"
+                    textLink1={t('pendingTask.textLink1')}
                     link2="https://maico-zurbriggen.github.io/pending_task/"
-                    textLink2="Implementación GitHub Pages"
+                    textLink2={t('pendingTask.textLink2')}
                 />} />
             </RoutesWithNotFound>
         </BrowserRouter>
