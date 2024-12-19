@@ -3,7 +3,7 @@ import { Principal } from './public' //Este es el componente de las paginas dina
 import { RoutesWithNotFound } from './components' //Este es el componente para cuando se ingresa una url desconocida
 import { AppRoutes } from './models' //Llamamos a nuestro modelo
 
-const basename = process.env.NODE_ENV === 'development' ? '/' : '/maico-zurbriggen.github.io';
+const basename = process.env.NODE_ENV === 'development' ? '/' : '/';
 
 const AppRouter = ({ t }) => {
     return (
