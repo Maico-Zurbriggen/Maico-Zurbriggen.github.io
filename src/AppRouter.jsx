@@ -1,15 +1,17 @@
-import { BrowserRouter, Navigate, Route } from 'react-router-dom' //Utilizamos estas herramientas para trabajar con el enrutamiento
+import { HashRouter, Navigate, Route } from 'react-router-dom' //Utilizamos estas herramientas para trabajar con el enrutamiento
 import { Principal } from './public' //Este es el componente de las paginas dinamicas de la aplicacion como el about y los proyectos
 import { RoutesWithNotFound } from './components' //Este es el componente para cuando se ingresa una url desconocida
 import { AppRoutes } from './models' //Llamamos a nuestro modelo
 
+const basename = process.env.NODE_ENV === 'development' ? '/' : 'maico-zurbriggen.github.io';
+
 const AppRouter = ({ t }) => {
     return (
-        <BrowserRouter>
+        <HashRouter basename={basename}>
             <RoutesWithNotFound>
                 <Route path='/' element={<Navigate to={AppRoutes.about} />} /> {/*Ruta principal, redirige al about*/}
                 <Route path={AppRoutes.about} element={<Principal 
-                    image="../src/assets/img/IMG-20240115-WA0004.jpg"
+                    image="./assets/img/IMG-20240115-WA0004.jpg"
                     alt={t('about.alt')}
                     title={t('about.title')}
                     subtitle={t('about.subtitle')}
@@ -24,7 +26,7 @@ const AppRouter = ({ t }) => {
                     {/**PROYECTOS*/}
 
                 <Route path={AppRoutes.projects.projectLuigi} element={<Principal 
-                    image="../src/assets/img/navbar-brand.svg"
+                    image="./assets/img/navbar-brand.svg"
                     alt={t('luigis.alt')}
                     title={t('luigis.title')}
                     subtitle={t('luigis.subtitle')}
@@ -36,7 +38,7 @@ const AppRouter = ({ t }) => {
                     textLink2={t('luigis.textLink2')}    
                 />} />
                 <Route path={AppRoutes.projects.projectPendingTask} element={<Principal 
-                    image="../src/assets/img/pending_task.png"
+                    image="./assets/img/pending_task.png"
                     alt={t('pendingTask.alt')}
                     title={t('pendingTask.title')}
                     subtitle={t('pendingTask.subtitle')}
@@ -48,7 +50,7 @@ const AppRouter = ({ t }) => {
                     textLink2={t('pendingTask.textLink2')}
                 />} />
             </RoutesWithNotFound>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
