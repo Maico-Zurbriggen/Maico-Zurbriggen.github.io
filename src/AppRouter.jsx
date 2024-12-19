@@ -11,7 +11,7 @@ const AppRouter = ({ t }) => {
             <RoutesWithNotFound>
                 <Route path='/' element={<Navigate to={AppRoutes.about} />} /> {/*Ruta principal, redirige al about*/}
                 <Route path={AppRoutes.about} element={<Principal 
-                    image="./assets/img/IMG-20240115-WA0004.jpg"
+                    image="./src/assets/img/IMG-20240115-WA0004.jpg"
                     alt={t('about.alt')}
                     title={t('about.title')}
                     subtitle={t('about.subtitle')}
@@ -26,7 +26,7 @@ const AppRouter = ({ t }) => {
                     {/**PROYECTOS*/}
 
                 <Route path={AppRoutes.projects.projectLuigi} element={<Principal 
-                    image="./assets/img/navbar-brand.svg"
+                    image="./src/assets/img/navbar-brand.svg"
                     alt={t('luigis.alt')}
                     title={t('luigis.title')}
                     subtitle={t('luigis.subtitle')}
@@ -38,7 +38,7 @@ const AppRouter = ({ t }) => {
                     textLink2={t('luigis.textLink2')}    
                 />} />
                 <Route path={AppRoutes.projects.projectPendingTask} element={<Principal 
-                    image="./assets/img/pending_task.png"
+                    image="./src/assets/img/pending_task.png"
                     alt={t('pendingTask.alt')}
                     title={t('pendingTask.title')}
                     subtitle={t('pendingTask.subtitle')}
