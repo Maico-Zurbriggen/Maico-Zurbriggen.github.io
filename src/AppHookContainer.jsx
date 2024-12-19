@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next' //Lo utilizamos para crear la variable con la que llamamos a nuestros lenguajes y nuestro modelo
 import App from './App'
-import './App.css'
 import AppRouter from './AppRouter'
+import './App.css'
 
 const AppHookContainer = () => {
     const { t, i18n } = useTranslation();

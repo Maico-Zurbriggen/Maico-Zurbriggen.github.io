@@ -1,14 +1,13 @@
-import { BrowserRouter, Navigate, Route } from 'react-router-dom'
-import { Principal } from './public'
-import { AppRoutes } from './models'
-import { RoutesWithNotFound } from './components'
-
+import { BrowserRouter, Navigate, Route } from 'react-router-dom' //Utilizamos estas herramientas para trabajar con el enrutamiento
+import { Principal } from './public' //Este es el componente de las paginas dinamicas de la aplicacion como el about y los proyectos
+import { RoutesWithNotFound } from './components' //Este es el componente para cuando se ingresa una url desconocida
+import { AppRoutes } from './models' //Llamamos a nuestro modelo
 
 const AppRouter = ({ t }) => {
     return (
         <BrowserRouter>
             <RoutesWithNotFound>
-                <Route path='/' element={<Navigate to={AppRoutes.about} />} />
+                <Route path='/' element={<Navigate to={AppRoutes.about} />} /> {/*Ruta principal, redirige al about*/}
                 <Route path={AppRoutes.about} element={<Principal 
                     image="../src/assets/img/IMG-20240115-WA0004.jpg"
                     alt={t('about.alt')}
@@ -20,7 +19,10 @@ const AppRouter = ({ t }) => {
                     textLink1={t('about.textLink1')}
                     link2="../src/assets/cv/MaicoZurbriggenCV.pdf"
                     textLink2={t('about.textLink2')}
-                />} />
+                />} /> {/**Ruta para el about*/}
+
+                    {/**PROYECTOS*/}
+
                 <Route path={AppRoutes.projects.projectLuigi} element={<Principal 
                     image="../src/assets/img/navbar-brand.svg"
                     alt={t('luigis.alt')}

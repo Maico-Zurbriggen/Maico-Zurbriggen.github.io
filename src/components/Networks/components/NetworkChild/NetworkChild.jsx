@@ -1,4 +1,4 @@
-const NetworkChild = ({ type, href, icon } = props) => {
+const NetworkChild = ({ type, href, icon }) => { //Componente para botones de red
 
     return (
         <a href={href} target="_blank">

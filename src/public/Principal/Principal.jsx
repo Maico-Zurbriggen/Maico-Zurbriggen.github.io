@@ -1,6 +1,7 @@
 import './Principal.css'
 
-const Principal = ({ image, alt, title, subtitle, description, skills, link1, textLink1, link2, textLink2 } = props) => {
+//Componente para paginas dinamicas, posee una estructura comun para todas las paginas
+const Principal = ({ image, alt, title, subtitle, description, skills, link1, textLink1, link2, textLink2 }) => {
     return (
         <div className="pages">
             <img src={image} alt={alt} />
@@ -9,8 +10,8 @@ const Principal = ({ image, alt, title, subtitle, description, skills, link1, te
             <p>{description}</p>
             <p>{skills}</p>
             <div className="links">
-                <a href={link1}><p>{textLink1}</p></a>
-                <a href={link2}><p>{textLink2}</p></a>
+                <a href={link1}><p className='underlining'>{textLink1}</p></a>
+                <a href={link2}><p className='underlining'>{textLink2}</p></a>
             </div>
         </div>
     )

@@ -1,41 +1,33 @@
-.sidebar {
+.sidebar { /*Estilos para nuestra barra lateral*/
     background-color: var(--lavender);
     border-radius: .5rem;
-    overflow-y: auto;
+    overflow-y: auto; /*Que aparezca un scroll cuando se sobrepasan los limites de alto*/
     padding: 1rem;
 }
 
-.sidebar a p:hover {
-    cursor: pointer;
-}
-
-.underlining {
-    text-decoration: underline;
-}
-
-.content {
-    display: none;
+.content { /*Estilo para el contenido de las secciones de la barra lateral*/
+    display: none; /*Ocultas por defecto*/
     padding: 1rem;
 }
 
-.content p, .content button {
+.show { /*Cuando se presiona el boton de la seccion se agrega esta clase y la seccion es visible*/
+    display: block;
+}
+
+.content p, .content button { /*Estilos para los parrafos y buttons dentro de las secciones*/
     font-size: 1.6rem;
     font-weight: normal;
     margin-bottom: .5rem;
     text-align: left;
 }
 
-.show {
-    display: block;
-}
-
-.projects {
+.projects { /*Estilos para nuestros proyectos*/
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: space-between; /*Distribuimos el texto en el contenido de la seccion de proyectos*/
 }
-.sidebar img {
-    width: 4rem;
+
+.sidebar img { /*Estilo para las imagenes dentro de la barra lateral*/
+    width: 4rem; /*Reducimos su tamaño*/
     height: 4rem;
 }

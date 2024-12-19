@@ -1,4 +1,4 @@
-const resources = {
+const resources = { //Este archivo contiene el ingles y español de nuestra pagina, este modelo se utiliza en el modelo i18n
     en: {
         translation: {
             about: {
@@ -28,8 +28,9 @@ const resources = {
             sidebar: {
                 about: {
                     buttonText: "About",
-                    text: "Maico Zurbriggen - React developer",
-                    more: "See more"
+                    firstText: "Maico Zurbriggen",
+                    secondText: "React Developer",
+                    thirdText: "See more"
                 },
                 projects: {
                     buttonText: "Projects",
@@ -38,38 +39,48 @@ const resources = {
                 education: {
                     buttonText: "Education",
                     engineering: {
-                        title: "Information Systems Engineering",
-                        completion: "Studying third year"
+                        firstText: "Information Systems Engineering",
+                        secondText: "UTN San Francisco, Third Year"
                     },
                     technician: {
-                        title: "Electronic Technician"
+                        firstText: "Electronic Technician",
+                        secondText: "IPET 50, 2016/2022"
                     }
                 },
                 coursesCertifications: {
                     buttonText: "Courses and Certifications",
                     jsBasic: {
-                        title: "JavaScript Basic"
+                        firstText: "JavaScript Basic",
+                        secondText: "HackerRank",
+                        thirdText: "See more"
                     },
                     jsIntermediate: {
-                        title: "JavaScript Intermediate"
+                        firstText: "JavaScript Intermediate",
+                        secondText: "HackerRank",
+                        thirdText: "See more",
+                        secondText: ""
                     },
                     htmlCss: {
-                        title: "HTML and CSS from Scratch"
+                        firstText: "HTML and CSS from Scratch",
+                        secondText: "TodoCode Academy",
+                        thirdText: "See more"
                     },
                     js: {
-                        title: "JavaScript from Scratch"
+                        firstText: "JavaScript from Scratch",
+                        secondText: "TodoCode Academy",
+                        thirdText: "See more"
                     },
                     more: "View Certificate"
                 },
                 languages: {
                     buttonText: "Languages",
                     english: {
-                        language: "English",
-                        level: "Basic"
+                        firstText: "English",
+                        secondText: "Basic"
                     },
                     spanish: {
-                        language: "Spanish",
-                        level: "Native"
+                        firstText: "Spanish",
+                        secondText: "Native"
                     }
                 }
             }
@@ -104,8 +115,9 @@ const resources = {
             sidebar: {
                 about: {
                     buttonText: "Sobre Mí",
-                    text: "Maico Zurbriggen - Desarrollador React",
-                    more: "Ver más"
+                    firstText: "Maico Zurbriggen",
+                    secondText: "Desarrollador React",
+                    thirdText: "Ver más"
                 },
                 projects: {
                     buttonText: "Proyectos",
@@ -114,38 +126,47 @@ const resources = {
                 education: {
                     buttonText: "Educación",
                     engineering: {
-                        title: "Ingeniería en Sistemas de Información",
-                        completion: "Cursando tercer año"
+                        firstText: "Ingeniería en Sistemas de Información",
+                        secondText: "UTN San Francisco, Tercer Año"
                     },
                     technician: {
-                        title: "Técnico Electrónico"
+                        firstText: "Técnico Electrónico",
+                        secondText: "IPET 50, 2016/2022"
                     }
                 },
                 coursesCertifications: {
                     buttonText: "Cursos y Certificaciones",
                     jsBasic: {
-                        title: "JavaScript Básico"
+                        firstText: "JavaScript Básico",
+                        secondText: "HackerRank",
+                        thirdText: "Ver más"
                     },
                     jsIntermediate: {
-                        title: "JavaScript Intermedio"
+                        firstText: "JavaScript Intermedio",
+                        secondText: "HackerRank",
+                        thirdText: "Ver más"
                     },
                     htmlCss: {
-                        title: "HTML Y CSS desde Cero"
+                        firstText: "HTML Y CSS desde Cero",
+                        secondText: "TodoCode Academy",
+                        thirdText: "Ver más"
                     },
                     js: {
-                        title: "JavaScript desde Cero"
+                        firstText: "JavaScript desde Cero",
+                        secondText: "TodoCode Academy",
+                        thirdText: "Ver más"
                     },
                     more: "Ver Certificado"
                 },
                 languages: {
                     buttonText: "Lenguajes",
                     english: {
-                        language: "Inglés",
-                        level: "Básico"
+                        firstText: "Inglés",
+                        secondText: "Básico"
                     },
                     spanish: {
-                        language: "Español",
-                        level: "Nativo"
+                        firstText: "Español",
+                        secondText: "Nativo"
                     }
                 }
             }

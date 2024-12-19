@@ -1,13 +1,4 @@
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    height: 100%;
-    overflow: hidden;
-    padding: 2rem;
-}
-
-.page {
+.page { /*Estilo general para nuestra pagina, para que ocupe todo el alto*/
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -15,32 +6,41 @@
     background-color: var(--light-blue);
 }
 
-.buttons-functions {
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    display: flex;
+.container { /*Estilo para el contenedor que contiene nuestras paginas dinamicas y la barra lateral*/
+    display: grid; /*Definimos una grilla*/
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    height: 100%;
+    overflow: hidden; /*Para que no se desplace el contenido cuando se abren muchas pestañas de nuestra barra lateral*/
+    padding: 2rem;
 }
 
-.button-function {
+.buttons-functions { /*Estilos para el contenedor de nuestros botones de farkMode y changeLanguage*/
+    position: absolute;
+    top: 2%;
+    left: 50%; /*Los ubicamos en la pagina*/
+    display: flex; /*Uno al lado del otro*/
+}
+
+.button-function { /*Estilos para los botones*/
     width: 4rem;
     height: 4rem;
-    border-radius: 100%;
-    display: flex;
+    border-radius: 100%; /*Circulos de un ancho y alto especificos*/
+    display: flex; /*Centramos los iconos*/
     justify-content: center;
     margin: .5rem;
 }
 
-.button-function img {
+.button-function img { /*Estilos para los iconos dentro de los botones*/
     width: 3rem;
     height: 3rem;
-    background-color: transparent;
+    background-color: transparent; /*Les sacamos el background*/
 }
 
-.darkMode {
-    background-color: var(--dark-blue);
+.darkMode { /*Estilos para cuando nuestro darkMode esta activo*/
+    background-color: var(--dark-blue); /*Cambiamos el color de background*/
 
-    h1, h2, h3, p, a, button {
+    h1, h2, h3, p, a, button { /*Cambiamos el color de los textos*/
         color: var(--white);
     }
 

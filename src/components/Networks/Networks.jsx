@@ -1,7 +1,7 @@
-import { NetworkChild } from "./components";
+import { NetworkChild } from "./components"; //Componente para cada boton de red
 import './Networks.css'
 
-const Networks = () => {
+const Networks = () => { //Componente para footer con las redes
 
     return (
         <div className="networks">

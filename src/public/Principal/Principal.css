@@ -1,14 +1,10 @@
-.pages {
+.pages { /*Distribuimos el contenido de la pagina dinamica*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.links {
+.links { /*Distribuimos los links del final de la pagina dinamica*/
     display: flex;
     justify-content: space-between;
-}
-
-.links a {
-    text-decoration: underline;
 }
