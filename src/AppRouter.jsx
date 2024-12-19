@@ -3,14 +3,14 @@ import { Principal } from './public' //Este es el componente de las paginas dina
 import { RoutesWithNotFound } from './components' //Este es el componente para cuando se ingresa una url desconocida
 import { AppRoutes } from './models' //Llamamos a nuestro modelo
 
-const basename = process.env.NODE_ENV === 'development' ? '/' : '/maico-zurbriggen.github.io';
+const basename = process.env.NODE_ENV === 'development' ? '/' : '/maico-zurbriggen.github.io/';
 
 const AppRouter = ({ t }) => {
     return (
         <HashRouter basename={basename}>
             <RoutesWithNotFound>
-                <Route path={`${basename}/`} element={<Navigate to={AppRoutes.about} />} /> {/*Ruta principal, redirige al about*/}
-                <Route path={`${basename}${AppRoutes.about}`} element={<Principal 
+                <Route path="/" element={<Navigate to={AppRoutes.about} />} /> {/*Ruta principal, redirige al about*/}
+                <Route path={AppRoutes.about} element={<Principal 
                     image="./src/assets/img/IMG-20240115-WA0004.jpg"
                     alt={t('about.alt')}
                     title={t('about.title')}
@@ -25,7 +25,7 @@ const AppRouter = ({ t }) => {
 
                     {/**PROYECTOS*/}
 
-                <Route path={`${basename}${AppRoutes.projects.projectLuigi}`} element={<Principal 
+                <Route path={AppRoutes.projects.projectLuigi} element={<Principal 
                     image="./src/assets/img/navbar-brand.svg"
                     alt={t('luigis.alt')}
                     title={t('luigis.title')}
@@ -37,7 +37,7 @@ const AppRouter = ({ t }) => {
                     link2="https://maico-zurbriggen.github.io/Luigi-s/"
                     textLink2={t('luigis.textLink2')}    
                 />} />
-                <Route path={`${basename}${AppRoutes.projects.projectPendingTask}`} element={<Principal 
+                <Route path={AppRoutes.projects.projectPendingTask} element={<Principal 
                     image="./src/assets/img/pending_task.png"
                     alt={t('pendingTask.alt')}
                     title={t('pendingTask.title')}
