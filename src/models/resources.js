@@ -49,8 +49,8 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 },
                 coursesCertifications: {
                     buttonText: "Courses and Certifications",
-                    jsBasic: {
-                        firstText: "JavaScript Basic",
+                    reactBasic: {
+                        firstText: "React Basic",
                         secondText: "HackerRank",
                         thirdText: "See more"
                     },
@@ -135,8 +135,8 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 },
                 coursesCertifications: {
                     buttonText: "Cursos y Certificaciones",
-                    jsBasic: {
-                        firstText: "JavaScript Básico",
+                    reactBasic: {
+                        firstText: "React Básico",
                         secondText: "HackerRank",
                         thirdText: "Ver más"
                     },
