@@ -11,7 +11,7 @@ const AppRouter = ({ t }) => {
             <RoutesWithNotFound>
                 <Route path="/" element={<Navigate to={AppRoutes.about} />} /> {/*Ruta principal, redirige al about*/}
                 <Route path={AppRoutes.about} element={<Principal 
-                    image="./src/assets/img/IMG-20240115-WA0004.jpg"
+                    image="/Portfolio_react_MaicoZurbriggen/src/assets/img/IMG-20240115-WA0004.jpg"
                     alt={t('about.alt')}
                     title={t('about.title')}
                     subtitle={t('about.subtitle')}

@@ -19,13 +19,13 @@ const Sidebar = ({ t }) => { //Componente para barra lateral
             <SideButton text={t('sidebar.about.buttonText')} method={() => dropDown(0)}> {/**Sector de la barra lateral cada uno posee un indice y sus elementos poseen el mismo indice */}
                 <ArrowIcon deployed={deployed} index={0} />
             </SideButton>
-            <SidebarLink link="./about" deployed={deployed} index={0} firstText={t('sidebar.about.firstText')} secondText={t('sidebar.about.secondText')} thirdText={t('sidebar.about.thirdText')} /> {/**Cuando se presiona el boton los elementos con el mismo indice aparecen o desaparecen */}
+            <SidebarLink link="/#about" deployed={deployed} index={0} firstText={t('sidebar.about.firstText')} secondText={t('sidebar.about.secondText')} thirdText={t('sidebar.about.thirdText')} /> {/**Cuando se presiona el boton los elementos con el mismo indice aparecen o desaparecen */}
 
             <SideButton text={t('sidebar.projects.buttonText')} method={() => dropDown(1)}>
                 <ArrowIcon deployed={deployed} index={1} />
             </SideButton>
-            <SidebarProject link="./projects/luigis" deployed={deployed} index={1} image="navbar-brand.svg" text="Luigi's" more={t('sidebar.projects.more')} />
-            <SidebarProject link="./projects/pendingtask" deployed={deployed} index={1} image="pending_task.png" text="Pending Task" more={t('sidebar.projects.more')} />
+            <SidebarProject link="/#projects/luigis" deployed={deployed} index={1} image="navbar-brand.svg" text="Luigi's" more={t('sidebar.projects.more')} />
+            <SidebarProject link="/#projects/pendingtask" deployed={deployed} index={1} image="pending_task.png" text="Pending Task" more={t('sidebar.projects.more')} />
 
             <SideButton text={t('sidebar.education.buttonText')} method={() => dropDown(2)}>
                 <ArrowIcon deployed={deployed} index={2} />
