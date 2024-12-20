@@ -58,7 +58,6 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                         firstText: "JavaScript Intermediate",
                         secondText: "HackerRank",
                         thirdText: "See more",
-                        secondText: ""
                     },
                     htmlCss: {
                         firstText: "HTML and CSS from Scratch",

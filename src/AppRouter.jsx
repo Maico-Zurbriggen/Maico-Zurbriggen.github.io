@@ -3,7 +3,7 @@ import { Principal } from './public' //Este es el componente de las paginas dina
 import { RoutesWithNotFound } from './components' //Este es el componente para cuando se ingresa una url desconocida
 import { AppRoutes } from './models' //Llamamos a nuestro modelo
 
-const basename = process.env.NODE_ENV === 'development' ? '/' : '/';
+const basename = process.env.NODE_ENV === 'development' ? '/' : '/maico-zurbriggen.github.io/' //Definimos el basename para el enrutamiento;
 
 const AppRouter = ({ t }) => {
     return (
@@ -11,7 +11,7 @@ const AppRouter = ({ t }) => {
             <RoutesWithNotFound>
                 <Route path="/" element={<Navigate to={AppRoutes.about} />} /> {/*Ruta principal, redirige al about*/}
                 <Route path={AppRoutes.about} element={<Principal 
-                    image="/Portfolio_react_MaicoZurbriggen/src/assets/img/IMG-20240115-WA0004.jpg"
+                    image="./src/assets/img/IMG-20240115-WA0004.jpg"
                     alt={t('about.alt')}
                     title={t('about.title')}
                     subtitle={t('about.subtitle')}
