@@ -38,8 +38,8 @@
     return (
       <div className={`page ${dark ? "darkMode" : ""}`}> {/**Div que contiene nuestra pagina, si dark es true tiene la clase de darkMode si es false no */}
         <div className="buttons-functions"> {/**Div que contiene nuestros botones de darkMode y cambio de idioma */}
-          <Button method={darkMode} link={`${dark ? "../src/assets/img/moonDark.svg" : "../src/assets/img/moon.svg"}`} /> {/**Botones, si darkMode esta activado son blancos y sino negros */}
-          <Button method={languageChange} link={`${dark ? "../src/assets/img/translateDark.svg" : "../src/assets/img/translate.svg"}`} />
+          <Button method={darkMode} link={`${dark ? "./assets/img/moonDark.svg" : "./assets/img/moon.svg"}`} /> {/**Botones, si darkMode esta activado son blancos y sino negros */}
+          <Button method={languageChange} link={`${dark ? "./assets/img/translateDark.svg" : "./assets/img/translate.svg"}`} />
         </div>
         <div className='container'> {/**Div que contiene nuestras paginas dinamicas y nuestra barra lateral que es estatica */}
           {children}

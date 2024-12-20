@@ -36,10 +36,10 @@ const Sidebar = ({ t }) => { //Componente para barra lateral
             <SideButton text={t('sidebar.coursesCertifications.buttonText')} method={() => dropDown(3)}>
                 <ArrowIcon deployed={deployed} index={3} />
             </SideButton>
-            <SidebarLink link="./src/assets/certificates/javascript_basic_certificate.pdf" deployed={deployed} index={3} firstText={t('sidebar.coursesCertifications.jsBasic.firstText')} secondText={t('sidebar.coursesCertifications.jsBasic.secondText')} thirdText={t('sidebar.coursesCertifications.jsBasic.thirdText')} />
-            <SidebarLink link="./src/assets/certificates/javascript_intermediate_certificate.pdf" deployed={deployed} index={3} firstText={t('sidebar.coursesCertifications.jsIntermediate.firstText')} secondText={t('sidebar.coursesCertifications.jsIntermediate.secondText')} thirdText={t('sidebar.coursesCertifications.jsIntermediate.thirdText')} />
-            <SidebarLink link="./src/assets/certificates/certificado-html-y-css.html" deployed={deployed} index={3} firstText={t('sidebar.coursesCertifications.htmlCss.firstText')} secondText={t('sidebar.coursesCertifications.htmlCss.secondText')} thirdText={t('sidebar.coursesCertifications.htmlCss.thirdText')} />
-            <SidebarLink link="./src/assets/certificates/certificado-javascript.html" deployed={deployed} index={3} firstText={t('sidebar.coursesCertifications.js.firstText')} secondText={t('sidebar.coursesCertifications.js.secondText')} thirdText={t('sidebar.coursesCertifications.js.thirdText')} />
+            <SidebarLink link="./assets/certificates/javascript_basic_certificate.pdf" deployed={deployed} index={3} firstText={t('sidebar.coursesCertifications.jsBasic.firstText')} secondText={t('sidebar.coursesCertifications.jsBasic.secondText')} thirdText={t('sidebar.coursesCertifications.jsBasic.thirdText')} />
+            <SidebarLink link="./assets/certificates/javascript_intermediate_certificate.pdf" deployed={deployed} index={3} firstText={t('sidebar.coursesCertifications.jsIntermediate.firstText')} secondText={t('sidebar.coursesCertifications.jsIntermediate.secondText')} thirdText={t('sidebar.coursesCertifications.jsIntermediate.thirdText')} />
+            <SidebarLink link="./assets/certificates/certificado-html-y-css.html" deployed={deployed} index={3} firstText={t('sidebar.coursesCertifications.htmlCss.firstText')} secondText={t('sidebar.coursesCertifications.htmlCss.secondText')} thirdText={t('sidebar.coursesCertifications.htmlCss.thirdText')} />
+            <SidebarLink link="./assets/certificates/certificado-javascript.html" deployed={deployed} index={3} firstText={t('sidebar.coursesCertifications.js.firstText')} secondText={t('sidebar.coursesCertifications.js.secondText')} thirdText={t('sidebar.coursesCertifications.js.thirdText')} />
 
             <SideButton text={t('sidebar.languages.buttonText')} method={() => dropDown(4)}>
                 <ArrowIcon deployed={deployed} index={4} />
