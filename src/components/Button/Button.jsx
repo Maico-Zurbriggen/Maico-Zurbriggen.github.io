@@ -1,6 +1,6 @@
-const Button = ({ link, method }) => { /**Componente para los botones de darkMode y changeLanguage */
+const Button = ({ className ,link, method }) => { /**Componente para los botones de darkMode y changeLanguage */
     return (
-        <button onClick={method} className="button-function">
+        <button onClick={method} className={`${className} button-function`}>
             <img src={link}/>
         </button>
     )

@@ -31,6 +31,10 @@
     margin: .5rem;
 }
 
+.menu {
+    display: none;
+}
+
 .button-function img { /*Estilos para los iconos dentro de los botones*/
     width: 3rem;
     height: 3rem;
@@ -50,5 +54,26 @@
 
     button:hover, a:hover, i:hover {
         background-color: var(--sage);
+    }
+}
+
+@media(max-width: 768px) {
+    .menu {
+        display: flex;
+    }
+    .sidebar {
+        display: none;
+        position: absolute;
+        top: 10%;
+        right: 1rem;
+        width: 30rem;
+        height: 80%;
+    }
+    .container {
+        display: flex;
+    }
+    .buttons-functions {
+        left: auto;
+        right: 1rem;
     }
 }
