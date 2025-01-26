@@ -17,9 +17,9 @@ const AppRouter = ({ t }) => {
                     subtitle={t('about.subtitle')}
                     description={t('about.description')}
                     skills="React | JavaScript | HTML | CSS | Node | Express | MongoDB | GIT"
-                    link1="https://github.com/Maico-Zurbriggen/Portfolio_react"
+                    link1="./assets/cv/ZurbriggenMaicoCV-English.pdf"
                     textLink1={t('about.textLink1')}
-                    link2="./assets/cv/Maico-Zurbriggen.pdf"
+                    link2="./assets/cv/ZurbriggenMaicoCV.pdf"
                     textLink2={t('about.textLink2')}
                 />} /> {/**Ruta para el about*/}
 

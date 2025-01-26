@@ -6,7 +6,7 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 title: "I'am Maico Zurbriggen",
                 subtitle: "React Developer",
                 description: "I am looking to gain experience carrying out projects and researching, I am looking for my first job opportunity. In this portfolio you will be able to see the different projects I have worked on and the skills I have acquired",
-                textLink1: "Portfolio Repository",
+                textLink1: "Curriculum in english",
                 textLink2: "Curriculum"
             },
             luigis: {
@@ -92,7 +92,7 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 title: "Yo soy Maico Zurbriggen",
                 subtitle: "Desarrollador React",
                 description: "Busco adquirir experiencia realizando proyectos e investigando, me encuentro en búsqueda de mi primer oportunidad laboral. En este portfolio podrán ver los distintos proyectos en los que he trabajado y las habilidades que he adquirido",
-                textLink1: "Repositorio Portafolio",
+                textLink1: "Curriculum en inglés",
                 textLink2: "Curriculum"
             },
             luigis: {

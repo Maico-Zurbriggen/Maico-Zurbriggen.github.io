@@ -10,8 +10,8 @@ const Principal = ({ image, alt, title, subtitle, description, skills, link1, te
             <p>{description}</p>
             <p>{skills}</p>
             <div className="links">
-                <a href={link1}><p className='underlining'>{textLink1}</p></a>
-                <a href={link2}><p className='underlining'>{textLink2}</p></a>
+                <a href={link1} target='_blank'><p className='underlining'>{textLink1}</p></a>
+                <a href={link2} target='_blank'><p className='underlining'>{textLink2}</p></a>
             </div>
         </div>
     )
