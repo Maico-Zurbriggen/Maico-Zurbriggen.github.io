@@ -25,6 +25,14 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 textLink1: "Pending Task Repository",
                 textLink2: "Deployed on GitHub Pages"
             },
+            memoryGame: {
+                alt: "memory game image",
+                title: "Memory Game",
+                subtitle: "Memory game, about finding partners",
+                description: "This is a game about finding partners, implemented with React, JavaScript and CSS, it has a wide variety of functionalities to work on the logic of the game",
+                textLink1: "Memory Game Repository",
+                textLink2: "Deployed on GitHub Pages"
+            },
             sidebar: {
                 about: {
                     buttonText: "About",
@@ -109,6 +117,14 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 subtitle: "App para Control de Tareas Diarias",
                 description: "Esta es una página implementada con React y CSS, además se utilizo Zod para validar el formulario de ingreso de notas. Aún no posee una base de datos",
                 textLink1: "Repositorio Pending Task",
+                textLink2: "Desplegado en GitHub Pages"
+            },
+            memoryGame: {
+                alt: "imagen juego de la memoria",
+                title: "Memory Game",
+                subtitle: "Juego de la memoria, sobre encontrar parejas",
+                description: "Este es un juego sobre encontrar parejas, implementado con React, JavaScript y CSS, posee una gran variedad de funcionalidades para trabajar la lógica del juego",
+                textLink1: "Repositorio Memory Game",
                 textLink2: "Desplegado en GitHub Pages"
             },
             sidebar: {

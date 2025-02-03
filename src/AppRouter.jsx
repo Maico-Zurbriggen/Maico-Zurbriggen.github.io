@@ -49,6 +49,18 @@ const AppRouter = ({ t }) => {
                     link2="https://maico-zurbriggen.github.io/pending_task/"
                     textLink2={t('pendingTask.textLink2')}
                 />} />
+                <Route path={AppRoutes.projects.projectMemoryGame} element={<Principal
+                    image="./assets/img/memoryGame.png"
+                    alt={t('memoryGame.alt')}
+                    title={t('memoryGame.title')}
+                    subtitle={t('memoryGame.subtitle')}
+                    description={t('memoryGame.description')}
+                    skills="React | JavaSCript | CSS | HTML | GIT"
+                    link1="https://github.com/Maico-Zurbriggen/memoryGame"
+                    textLink1={t('memoryGame.textLink1')}
+                    link2="https://maico-zurbriggen.github.io/memoryGame/"
+                    textLink2={t('memoryGame.textLink2')}
+                />} />
             </RoutesWithNotFound>
         </HashRouter>
     )
