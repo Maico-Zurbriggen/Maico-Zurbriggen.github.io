@@ -21,9 +21,9 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 alt: "pending task image",
                 title: "Pending Task",
                 subtitle: "App for daily task control",
-                description: "This is a page implemented with React and CSS, and Zod was used to validate the note entry form. It does not yet have a database",
+                description: "This is a page implemented with React and CSS, and Zod was used to validate the note entry form. It has a backend and user control, but it does not have a database, it currently stores the information in a program variable",
                 textLink1: "Pending Task Repository",
-                textLink2: "Deployed on GitHub Pages"
+                textLink2: "Backend Repository"
             },
             memoryGame: {
                 alt: "memory game image",
@@ -115,9 +115,9 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 alt: "imagen app control de tareas",
                 title: "Pending Task",
                 subtitle: "App para Control de Tareas Diarias",
-                description: "Esta es una página implementada con React y CSS, además se utilizo Zod para validar el formulario de ingreso de notas. Aún no posee una base de datos",
+                description: "Esta es una página implementada con React y CSS, además se utilizo Zod para validar el formulario de ingreso de notas. Cuenta con un backend y un control de usuarios, pero aún no cuenta con una base de datos, actualmente los datos se almacenan en una variable de programa",
                 textLink1: "Repositorio Pending Task",
-                textLink2: "Desplegado en GitHub Pages"
+                textLink2: "Repositorio Backend"
             },
             memoryGame: {
                 alt: "imagen juego de la memoria",

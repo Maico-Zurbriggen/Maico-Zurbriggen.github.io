@@ -43,7 +43,7 @@ const AppRouter = ({ t }) => {
                     title={t('pendingTask.title')}
                     subtitle={t('pendingTask.subtitle')}
                     description={t('pendingTask.description')}
-                    skills="React | JavaScript | CSS | Zod | GIT"
+                    skills="React | JavaScript | CSS | Zod | NODE | Express | JsonWebToken | Cookie-Parser | GIT"
                     link1="https://github.com/Maico-Zurbriggen/pending_task"
                     textLink1={t('pendingTask.textLink1')}
                     link2="https://maico-zurbriggen.github.io/pending_task/"
