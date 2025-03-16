@@ -46,7 +46,7 @@ const AppRouter = ({ t }) => {
                     skills="React | JavaScript | CSS | Zod | NODE | Express | JsonWebToken | Cookie-Parser | GIT"
                     link1="https://github.com/Maico-Zurbriggen/pending_task"
                     textLink1={t('pendingTask.textLink1')}
-                    link2="https://maico-zurbriggen.github.io/pending_task/"
+                    link2="https://github.com/Maico-Zurbriggen/backend_pending_task"
                     textLink2={t('pendingTask.textLink2')}
                 />} />
                 <Route path={AppRoutes.projects.projectMemoryGame} element={<Principal
