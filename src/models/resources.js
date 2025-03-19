@@ -21,7 +21,7 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 alt: "pending task image",
                 title: "Pending Task",
                 subtitle: "App for daily task control",
-                description: "This is a page implemented with React and CSS, and Zod was used to validate the note entry form. It has a backend and user control, but it does not have a database, it currently stores the information in a program variable",
+                description: "This is a page implemented with React and CSS, and Zod was used to validate the note entry form. It has a backend and user control, but it does not have a database, it currently stores the information in a program variable. The frontend is deployed on GitHub Pages and the backend on Koyeb, you can use the application by logging into https://maico-zurbriggen.github.io/pending_task/",
                 textLink1: "Pending Task Repository",
                 textLink2: "Backend Repository"
             },
@@ -115,7 +115,7 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 alt: "imagen app control de tareas",
                 title: "Pending Task",
                 subtitle: "App para Control de Tareas Diarias",
-                description: "Esta es una página implementada con React y CSS, además se utilizo Zod para validar el formulario de ingreso de notas. Cuenta con un backend y un control de usuarios, pero aún no cuenta con una base de datos, actualmente los datos se almacenan en una variable de programa",
+                description: "Esta es una página implementada con React y CSS, además se utilizo Zod para validar el formulario de ingreso de notas. Cuenta con un backend y un control de usuarios, pero aún no cuenta con una base de datos, actualmente los datos se almacenan en una variable de programa. El frontend está desplegado en GitHub Pages y el backend en Koyeb, para utilizar la aplicación ingrese a https://maico-zurbriggen.github.io/pending_task/",
                 textLink1: "Repositorio Pending Task",
                 textLink2: "Repositorio Backend"
             },
