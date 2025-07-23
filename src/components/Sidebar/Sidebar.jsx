@@ -27,6 +27,9 @@ const Sidebar = ({ t }) => { //Componente para barra lateral
             <SidebarProject link="/#projects/luigis" deployed={deployed} index={1} image="navbar-brand.svg" text="Luigi's" more={t('sidebar.projects.more')} />
             <SidebarProject link="/#projects/pendingtask" deployed={deployed} index={1} image="pending_task.png" text="Pending Task" more={t('sidebar.projects.more')} />
             <SidebarProject link="/#projects/memoryGame" deployed={deployed} index={1} image="memoryGame.png" text="Memory Game" more={t('sidebar.projects.more')} />
+            <SidebarProject link="/#projects/musicApp" deployed={deployed} index={1} image="musicApp.svg" text="Music App" more={t('sidebar.projects.more')} />
+            <SidebarProject link="/#projects/clothesStore" deployed={deployed} index={1} image="clothesStore.png" text="Clothes Store" more={t('sidebar.projects.more')} />
+            <SidebarProject link="/#projects/cuandoLlega" deployed={deployed} index={1} image="cuandoLlega.svg" text="Cuando Llega" more={t('sidebar.projects.more')} />
 
             <SideButton text={t('sidebar.education.buttonText')} method={() => dropDown(2)}>
                 <ArrowIcon deployed={deployed} index={2} />

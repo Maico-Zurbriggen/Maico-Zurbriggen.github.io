@@ -61,6 +61,40 @@ const AppRouter = ({ t }) => {
                     link2="https://maico-zurbriggen.github.io/memoryGame/"
                     textLink2={t('memoryGame.textLink2')}
                 />} />
+                <Route path={AppRoutes.projects.projectMusicApp} element={<Principal
+                    image="./assets/img/musicApp.svg"
+                    alt={t('musicApp.alt')}
+                    title={t('musicApp.title')}
+                    subtitle={t('musicApp.subtitle')}
+                    description={t('musicApp.description')}
+                    skills="React | JavaSCript | CSS | HTML | GIT | Axios | React router"
+                    link1="https://github.com/Maico-Zurbriggen/music_app"
+                    textLink1={t('musicApp.textLink1')}
+                    link2="https://maico-zurbriggen.github.io/music_app/"
+                    textLink2={t('musicApp.textLink2')}
+                />} />
+                <Route path={AppRoutes.projects.projectClothesStore} element={<Principal
+                    image="./assets/img/clothesStore.png"
+                    alt={t('clothesStore.alt')}
+                    title={t('clothesStore.title')}
+                    subtitle={t('clothesStore.subtitle')}
+                    description={t('clothesStore.description')}
+                    skills="React | JavaSCript | CSS | HTML | GIT | SQLite | Express | Sequelize"
+                    link1="https://github.com/Juanchipiruli/TP4-DSW"
+                    textLink1={t('clothesStore.textLink1')}
+                    link2="https://github.com/Juanchipiruli/backendDSW-TP4"
+                    textLink2={t('clothesStore.textLink2')}
+                />} />
+                <Route path={AppRoutes.projects.projectCuandoLlega} element={<Principal
+                    image="./assets/img/cuandoLlega.svg"
+                    alt={t('cuandoLlega.alt')}
+                    title={t('cuandoLlega.title')}
+                    subtitle={t('cuandoLlega.subtitle')}
+                    description={t('cuandoLlega.description')}
+                    skills="React | JavaSCript | CSS | HTML | GIT | API Google Maps"
+                    link1="https://cuandollega.web.app/"
+                    textLink1={t('cuandoLlega.textLink1')}
+                />} />
             </RoutesWithNotFound>
         </HashRouter>
     )

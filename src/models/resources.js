@@ -33,6 +33,29 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 textLink1: "Memory Game Repository",
                 textLink2: "Deployed on GitHub Pages"
             },
+            musicApp: {
+                alt: "music app image",
+                title: "Music App",
+                subtitle: "App for music search",
+                description: "This is a page implemented with React, CSS and the Spotify Api, for search artists, albums and songs. It is deployed on GitHub Pages.",
+                textLink1: "Music App Repository",
+                textLink2: "Deployed on GitHub Pages"
+            },
+            clothesStore: {
+                alt: "clothes store image",
+                title: "Clothes Store",
+                subtitle: "App for clothes catalog",
+                description: "This is a page implemented with React and CSS, for show a catalog of a clothes store, where you can create a cart and consult the wpp of the seller. It is a complete application, with a frontend and a backend. The front is deployed on GitHub Pages and the backend made with sequelize, SQLite and express is not deployed. This project was done in collaboration with 2 classmates from the faculty.",
+                textLink1: "Frontend Clothes Store Repository",
+                textLink2: "Backend Clothes Store Repository"
+            },
+            cuandoLlega: {
+                alt: "cuando llega image",
+                title: "Cuando Llega",
+                subtitle: "App for bus schedules",
+                description: "This is an application implemented with React, CSS and the Google Maps Api, to search for bus schedules. We consume a third party api that contains all the information of the buses. It is deployed on Firebase. This project was done within a team of work for the San Francisco municipality.",
+                textLink1: "Deployed on Firebase",
+            },
             sidebar: {
                 about: {
                     buttonText: "About",
@@ -126,6 +149,29 @@ const resources = { //Este archivo contiene el ingles y español de nuestra pagi
                 description: "Este es un juego sobre encontrar parejas, implementado con React, JavaScript y CSS, posee una gran variedad de funcionalidades para trabajar la lógica del juego",
                 textLink1: "Repositorio Memory Game",
                 textLink2: "Desplegado en GitHub Pages"
+            },
+            musicApp: {
+                alt: "imagen aplicación de música",
+                title: "Music App",
+                subtitle: "Aplicación para búsqueda de artistas y canciones",
+                description: "Esta es una aplicación implementada con React, CSS y la Api de spotify, para buscar artistas, sus albúmes y canciones. Se encuentra desplegada en GitHub Pages.",
+                textLink1: "Repositorio Music App",
+                textLink2: "Desplegado en GitHub Pages"
+            },
+            clothesStore: {
+                alt: "imagen tienda de ropa",
+                title: "Clothes Store",
+                subtitle: "Aplicación de catálogo de ropa",
+                description: "Esta es una aplicación implementada con React y CSS, para mostrar un catálogo de una tienda de ropa, donde se puede crear un carrito y consultar al wpp del vendedor. Es una aplicación completa, con un frontend y un backend. El front está desplegado en GitHub Pages y el backend hecho con sequelize, SQLite y express no se encuentra desplegado. Este proyecto lo realizamos junto a 2 compañeros de la facultad como trabajo final de la materia de desarrollo de software.",
+                textLink1: "Repositorio frontend Clothes Store",
+                textLink2: "Repositorio backend Clothes Store"
+            },
+            cuandoLlega: {
+                alt: "imagen aplicación cuando llega",
+                title: "Cuando Llega",
+                subtitle: "Aplicación para buscar horarios de buses",
+                description: "Esta es una aplicación implementada con React, CSS y la Api de Google Maps, para buscar horarios de buses. Consumimos una api de terceros que contiene toda la información de los colectivos. Se encuentra desplegada en Firebase. Este proyecto lo realice dentro de un equipo de trabajo para la municipalidad de San Francisco",
+                textLink1: "Desplegado en Firebase",
             },
             sidebar: {
                 about: {
