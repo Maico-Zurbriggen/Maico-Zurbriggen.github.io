@@ -2,9 +2,7 @@ const AppRoutes = { //Modelo que contiene las rutas validas de nuestra pagina
     about: '/about',
     projects: {
         root: '/projects',
-        projectLuigi: '/projects/luigis',
-        projectPendingTask: '/projects/pendingtask',
-        projectMemoryGame: '/projects/memoryGame',
+        projectInspectors: '/projects/inspectors',
         projectMusicApp: '/projects/musicApp',
         projectClothesStore: '/projects/clothesStore',
         projectCuandoLlega: '/projects/cuandoLlega'
